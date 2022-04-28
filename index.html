@@ -5,23 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Etch a Sketch</h1>
-        <div class="screen">
+    <div class="contain" id="container">
+        <div id="etch-frame" class="ui">
+            <div class="logo">
+                <span>Etch-a-Sketch</span>
+            </div>
+            <div id="canvas" class="canvas" width="600" height="400"></div>
+            <div id="menu">
+                
+                <label for="quantity" class="control">Size</label>
+                <input type="text" id="quantity" placeholder="Enter digits between 16 - 100" class="control"/>
+                <button type="button" id="reset" class="control">Clear</button>
 
-        </div>
-        <div class="buttons">
-            <button type="button">Clear</button>
-            <button type="button">Small</button>
-            <button type="button">Medium</button>
-            <button type="button">Large</button>
-            <button type="button">Rainbow</button>
-            <button type="button">Greyscale</button>
-            <button type="button">Color</button>
+                <input type="radio" id="d" name="cl" class="control"/>
+                <label for="r" class="control">Default</label>
+
+                <input type="radio" id="r" name="cl" class="control"/>
+                <label for="r" class="control">Rainbow</label>
+
+                <input type="radio" id="e" name="cl" class="control"/>
+                <label for="e" class="control">Eraser</label>
+                
+                <input type="radio" id="cn" name="cl" class="control"/>
+                <label for="r" class="control">Click then pick</label>
+                <input type="color" id="c" name="cl" class="control"/>
+                
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

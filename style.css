@@ -1,0 +1,80 @@
+body {
+    background-color:blanchedalmond;
+    text-align: center;
+}
+div {
+    display: block;
+}
+#etch-frame {
+
+    position: relative;
+    width: 750px;
+    height: 530px;
+    margin: auto;
+    background-color: #cf0000;
+    border: 3px solid rgb(43, 41, 41);
+  border-radius: 5px;
+    box-shadow: inset;
+    
+   
+}
+.logo {
+    padding: 20px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffe6c9;
+    font-family: 'Rondo';
+    text-shadow: 1px 1px 0 rgb(0 0 0 /50%);
+}
+
+#canvas {
+    background-color: aliceblue;
+  display: inline-grid;
+  border: 3px solid rgb(43, 41, 41);
+  border-radius: 5px;
+  height: 400px;
+  width: 600px;
+}
+#menu {
+  
+  padding: 5px;
+}
+.control {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #50273f;
+    background-color: aliceblue;
+    border: 1px solid rgb(43, 41, 41);
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 3px;
+
+}
+
+
+.square {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.default {
+  background-color: rgb(17, 16, 16);
+  border: 1px solid black;
+}
+
+.rainbow {
+  background-color: rgb(red, green, blue);
+  border: 1px solid black;
+}
+
+#menu {
+  padding: 5px;
+}
+
+input[type="radio"]:checked + label {
+      background-color: rgb(148, 109, 51);
+    }
+
+button:hover{
+      background: rgb(148, 109, 51);  }
